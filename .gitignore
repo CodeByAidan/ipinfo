@@ -1,0 +1,7 @@
+*.xcuserdatad/
+*.xcuserdata/
+*.xcsettings
+*.xcdebugger/
+*.xcschemes/
+.DS_Store
+
