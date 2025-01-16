@@ -23,7 +23,7 @@ jobs:
         run: xcodebuild -project IpInfo.xcodeproj -scheme IpInfo -configuration Release
 
       - name: List output directory contents
-        run: ls -la IpInfo/output
+        run: ls -la output/
 
       - name: Save executable
         uses: actions/upload-artifact@v4
