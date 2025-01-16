@@ -29,7 +29,7 @@ struct AboutView: View {
                     .frame(width: 350.0)
                 
                 HStack {
-                    Button(action: {openURL(URL(string: "https://github.com/bentettmar")!)}) {
+                    Button(action: {openURL(URL(string: "https://github.com/bennyscripts")!)}) {
                         Text("Github")
                     }
                 }
