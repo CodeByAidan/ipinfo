@@ -28,7 +28,7 @@ jobs:
         run: xcodebuild -project IpInfo.xcodeproj -scheme IpInfo -configuration Release
 
       - name: Save executable
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: IpInfo
           path: IpInfo/output/IpInfo.app
