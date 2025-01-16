@@ -4,7 +4,7 @@ import Foundation
 class AppDelegate: NSObject, NSApplicationDelegate {
     var statusItem: NSStatusItem?
     var popOver = NSPopover()
-    var version = "1.0.0"
+    var version = "1.1.0"
     
     func applicationDidFinishLaunching(_ notification: Notification) {
         NSApp.setActivationPolicy(.accessory)
