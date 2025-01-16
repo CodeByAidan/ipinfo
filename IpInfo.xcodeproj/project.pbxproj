@@ -107,6 +107,7 @@
 				B2C95D1128009E8600CDE681 /* Sources */,
 				B2C95D1228009E8600CDE681 /* Frameworks */,
 				B2C95D1328009E8600CDE681 /* Resources */,
+				B2C95D372800B31400CDE681 /* Copy Executable */,
 			);
 			buildRules = (
 			);
@@ -177,6 +178,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B2C95D372800B31400CDE681 /* Copy Executable */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Executable";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -r \"${BUILT_PRODUCTS_DIR}/${FULL_PRODUCT_NAME}\" \"${PROJECT_DIR}/output/\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
 		B2C95D2228009E8B00CDE681 /* Debug */ = {
