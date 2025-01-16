@@ -18,23 +18,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         popOver.contentViewController?.view = NSHostingView(rootView: menuView)
         
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
-        
-        guard let logo = NSImage(named: NSImage.Name("menu-bar")) else { return }
 
-        let resizedLogo = NSImage(size: NSSize(width: 18, height: 18), flipped: false) { (dstRect) -> Bool in
-            logo.draw(in: dstRect)
-            return true
+        guard let logo = NSImage(named: "menu-bar") else {
+            print("Error: menu-bar image not found")
+            return
         }
         
         if let MenuButton = statusItem?.button {
             MenuButton.action = #selector(openMenu)
-            MenuButton.image = resizedLogo
-            MenuButton.image?.isTemplate = true
+            MenuButton.image = logo
         }
     }
     
     func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
-        NSApp.setActivationPolicy(.accessory)
         return false
     }
     
