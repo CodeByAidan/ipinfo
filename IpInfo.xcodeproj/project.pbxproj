@@ -189,6 +189,7 @@
 			);
 			name = "Copy Executable";
 			outputPaths = (
+				"${PROJECT_DIR}/output/${FULL_PRODUCT_NAME}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
